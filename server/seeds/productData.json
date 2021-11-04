@@ -1,0 +1,32 @@
+[
+  {
+    "productName": "chair1",
+    "price": 2.99,
+    "imageUrl" : "/images/chair1.png"
+  },
+  {
+    "productName": "chair2",
+    "price": 2.99,
+    "imageUrl" : "/images/chair2.png"
+  },
+  {
+    "productName": "chair3",
+    "price": 2.99,
+    "imageUrl" : "/images/chair3.png"
+  },
+  {
+    "productName": "sofa1",
+    "price": 2.99,
+    "imageUrl" : "/images/sofa1.png"
+  },
+  {
+    "productName": "sofa2",
+    "price": 2.99,
+    "imageUrl" : "/images/sofa2.png"
+  },
+  {
+    "productName": "sofa3",
+    "price": 2.99,
+    "imageUrl" : "/images/sofa3.png"
+  }
+]
