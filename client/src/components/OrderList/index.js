@@ -6,7 +6,7 @@ function Orderlist({me}) {
   
   return (
     <div>
-      <h2 className="col-12">Order List</h2>
+      <h2 className="col-12">Orders List</h2>
         {me.previousOrder.length? (
           reversed.map(( order , i) => (
             <div key={reversed[i]._id} className="order-card mb-3 col-12">
