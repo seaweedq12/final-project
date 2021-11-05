@@ -23,7 +23,7 @@ const ProductList = ({
   };
 
   if (!products.length) {
-    return <h3>No Products Yet</h3>;
+    return <h3>Noo Products Yet</h3>;
   }
 
   return (
