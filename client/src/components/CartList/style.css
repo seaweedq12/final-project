@@ -1,0 +1,53 @@
+.image{
+  width: 100px;
+  height: 100px;
+}
+
+.cont {
+}
+
+.cartCard{
+  background-color: rgb(65, 65, 65);
+  border-radius: 0.2rem;
+}
+
+.removeBut{
+  align-self: flex-start;
+}
+
+.text{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+button{
+  background-color: #222;
+  border-radius: 0.2rem;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 30px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  opacity: .75;
+}

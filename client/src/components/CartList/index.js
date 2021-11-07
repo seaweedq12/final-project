@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './style.css';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
 import { useMutation } from '@apollo/client';
@@ -57,19 +58,21 @@ const CartList = ({me}) => {
   }
  
   return (
-    <div>
+    <div className="row mt-5 mb-3 col-12 ">
       {me.map((products , i) => (
-          <div key={me[i]._id} className="mb-3 col-12">
-            <div className="bg-light p-2">
+          <div key={me[i]._id} className="mb-3 cont col-md-6">
+            <div className="d-flex justify-content-between cartCard p-2 ">
             <img
-               alt="productimage"
+              className="image"
+              alt="productimage"
               src={me[i].imageUrl}
               />
-              <p>{me[i].productName}</p>
-              <p>{me[i].price}</p>
-              <p>{me[i].stock}</p>
+              <div>
+                <p className="text">{me[i].productName}</p>
+                <p className="text">{me[i].price}</p>
+              </div>
+              <button className="removeBut" onClick={() => handleRemoveCart(me[i]._id)}>Remove</button>
             </div>
-            <button onClick={() => handleRemoveCart(me[i]._id)}>Remove</button>
           </div>
         ))}
         <button onClick={() => handleAddOrder(me)}>Checkout</button>
