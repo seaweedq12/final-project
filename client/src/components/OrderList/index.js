@@ -13,7 +13,7 @@ function Orderlist({me}) {
               <div className="pt-2 pb-2">
                 <p className="order-text">{reversed[i].orderdate}</p>
                 <p className="order-text">items: {reversed[i].productList.length}</p>
-                <p className="order-text">total price: {reversed[i].productList.reduce(function (accumulator, item) {
+                <p className="order-text">total price: $ {reversed[i].productList.reduce(function (accumulator, item) {
                   return accumulator + item.price;
                 }, 0)}
                 </p>

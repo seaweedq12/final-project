@@ -69,13 +69,15 @@ const CartList = ({me}) => {
               />
               <div>
                 <p className="text">{me[i].productName}</p>
-                <p className="text">{me[i].price}</p>
+                <p className="text">$ {me[i].price}</p>
               </div>
               <button className="removeBut" onClick={() => handleRemoveCart(me[i]._id)}>Remove</button>
             </div>
           </div>
         ))}
+        <div className="col-12">
         <button onClick={() => handleAddOrder(me)}>Checkout</button>
+        </div>
     </div>
   );
 };

@@ -35,7 +35,7 @@ const ProductList = ({
       <div className="row">
       {products &&
         products.map((products) => (
-          <div key={products._id} className="col-lg-6">
+          <div key={products._id} className="col-md-6 col-xl-4">
           <div className="mb-3 col-lg-12">
             <div className="product-card d-flex flex-column align-items-center">
             <img
@@ -44,7 +44,7 @@ const ProductList = ({
                src={products.imageUrl}
               />
               <p className="product-text">{products.productName}</p>
-              <p className="product-text">{products.price}</p>
+              <p className="product-text">$ {products.price}</p>
               {Auth.loggedIn() ? (
                 <button className="product-button" onClick={() => handleAddCart(products._id)}>Add to cart</button>
               ):(

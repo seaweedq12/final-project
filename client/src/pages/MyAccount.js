@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from '@apollo/client';
+import "../style/myaccount.css";
 
 import Myinfobar from '../components/Myinfobar';
 import Myinfolist from '../components/MyinfoList';
@@ -26,11 +27,11 @@ const MyAccount = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
-        <div className="col-2 border-right border-secondary min-vh-100">
+      <div className="flex-row ">
+        <div className="col-md-2 col-12 accnav">
           <Myinfobar currentPage={currentPage} handlePageChange={handlePageChange}/>
         </div>
-        <div className="col-10">
+        <div className="col-md-10 col-12">
           {renderPage()}
         </div>    
       </div>

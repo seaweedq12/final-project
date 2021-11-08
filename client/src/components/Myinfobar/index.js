@@ -1,8 +1,9 @@
 import React from "react";
+import "./style.css";
 
 function Myinfobar({ handlePageChange }) {
   return (
-    <ul className="nav d-flex flex-column ">
+    <ul className="nav d-md-block">
       <li className="nav-item">
         <a
           href="#myinfo"
@@ -13,7 +14,7 @@ function Myinfobar({ handlePageChange }) {
           About
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item ">
         <a
           href="#Order"
           onClick={() => handlePageChange('Order')}
